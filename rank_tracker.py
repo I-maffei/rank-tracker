@@ -4,7 +4,7 @@ import datetime
 import os
 
 API_KEY = os.environ.get("SERPAPI_KEY")
-TARGET_URL = "maffei-structure.com/work/sf_concrete/"
+TARGET_URL = "maffei-structure.com/work/san-francisco-concrete-building-screening-program/"
 
 QUERIES = [
     "concrete building screening program",
