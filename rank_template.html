@@ -54,6 +54,14 @@
     color: var(--muted);
     text-align: right;
   }
+  .region-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
   .tabs {
     display: flex;
     gap: 8px;
@@ -217,13 +225,17 @@
   <div class="last-updated" id="lastUpdated"></div>
 </header>
 
+<div class="region-label">Region</div>
 <div class="tabs" id="tabs"></div>
 <div class="stats-row" id="statsRow"></div>
 
 <div class="section">
   <div class="section-header">
     <span class="section-title">Rank Over Time — lower is better</span>
-    <div class="legend" id="legend"></div>
+    <div>
+      <div class="region-label" style="text-align:right;margin-bottom:6px">Search Terms</div>
+      <div class="legend" id="legend"></div>
+    </div>
   </div>
   <div class="chart-wrap">
     <canvas id="rankChart"></canvas>
